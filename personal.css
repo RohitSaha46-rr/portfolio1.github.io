@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('bg1.jpg');
+    background-size: 100% 100%;
+}
+.head{
+    width: 100vw;
+    height: 20vh;
+   
+}
+h1{
+    padding-left: 10vw;
+    padding-top: 10vh;
+    color: white;
+    font-style: italic;
+    cursor: pointer;
+}
+p{
+    width: 80vw;
+    padding-left: 10vw;
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    
+}
+.image1{
+    width: 79vw;
+    height: 50vh;
+    padding-left: 10vw;
+    padding-top: 5vh;
+}
+.second{
+    color: rgb(255, 0, 0);
+    font-weight: bolder;
+}
+.one{
+    width: 100vw;
+  
+    
+ 
+}
+.image2{
+    width: 79vw;
+    height: 70vh;
+    padding-left: 10vw;
+    padding-top: 5vh;
+}
+.image3{
+    width: 79vw;
+    height: 90vh;
+    padding-left: 10vw;
+    padding-top: 5vh;
+}
+.para{
+    color: black;
+}
+.hh{
+    color: black;
+    font-style: italic;
+}
+.two{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('bg1.jpg');
+    background-size: 100% 100%;
+}
+.image4{
+    width: 79vw;
+    height:50vh;
+    padding-left: 10vw;
+    padding-top: 5vh;
+}
+.three{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('bg1.jpg');
+    background-size: 100% 100%;
+}
+.three p{
+    padding-top: 5vh;
+}
+h1:hover{
+    font-size:2.3rem;
+}
+@media(min-width:300px)and (max-width:600px){
+   
+    h1{
+        font-size: 1rem;
+    }
+    .content p{
+        font-size: 1rem;
+    }
+    .image1,.image4{
+        height: 30vh;
+    }
+    .three p{
+        font-size: 1rem;
+    }
+    header .content .second{
+        font-size: 0.7rem;
+    }
+    h1:hover{
+        font-size:1rem;
+    }
+    .three p{
+        padding-top: 5vh;
+    }
+   
+}

@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="rohit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <img src="back2.jpg" class="image">
+        
+        
+        <div class="content">
+            <h1><span class="span1">Hi!</span>I'm Rohit Saha :)</h1>
+            <h3>A CSE student learning web development.I'm a noob in making in websites and I tried my best to make this website creative. </h3>
+            <h3>So it's a request to rate my wesite below. :))</h3>
+            <h1>P.S: I know my pic is looking weird but as you know</h1> 
+            <h1>looks doesn't matter,work does!(just kidding!)</h1>
+        </div>
+        <div class="rating">
+            <ul class="Stars">
+                <li class="star"><i class="fas fa-star"></i></li>
+                <li class="star"><i class="fas fa-star"></i></li>
+                <li class="star"><i class="fas fa-star"></i></li>
+                <li class="star"><i class="fas fa-star"></i></li>
+                <li class="star"><i class="fas fa-star"></i></li>
+            </ul>
+            <input type="text" placeholder="Rate Me" id="rate">
+        </div>
+    </header>
+</body>
+<script>
+    let star=document.querySelectorAll('.star');
+    let rate=document.getElementById('rate');
+
+    for(i=0;i<star.length;i++){
+        star[i].starValue=i+1;
+
+        ["click","mouseover","mouseout"].forEach(function(e){
+            star[i].addEventListener(e,show);
+
+        });
+    }
+    function show(e){
+    let type=e.type;
+    starValue=this.starValue;
+    star.forEach(function(element,index){
+     if(type==="click"){
+         if(index<starValue)
+         element.classList.add('orange');
+         rate.value=`You rated ${starValue} stars.Thanks for your review :))`;
+     }
+     if(type==="mouseover"){
+         if(index<starValue)
+         element.classList.add('yellow');
+     }
+     if(type==="mouseout"){
+         
+         element.classList.remove('yellow');
+     }
+    });
+    
+}
+
+</script>
+</html>

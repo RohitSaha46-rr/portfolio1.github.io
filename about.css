@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+   
+}
+.heading{
+  width: 13vw;
+  
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+ 
+  
+}
+h1{
+    color: green;
+    font-size: 4rem;
+
+  
+    animation: slide 4s linear infinite;
+}
+
+@keyframes slide{
+    0%{
+        color: hotpink;
+        border-bottom:5px solid hotpink;
+    }
+    25%{
+       color: indigo;
+       border-bottom:5px solid indigo;
+    }
+   50%{
+        color: mediumslateblue;
+        border-bottom:5px solid mediumslateblue;
+    }
+    75%{
+        color: rgb(128, 0, 60);
+        border-bottom:5px solid rgb(128, 0, 60);
+    }
+    100%{
+        color: hotpink;
+        border-bottom: 5px solid hotpink;
+    }
+}
+.content{
+    height: 50vh;
+    width: 70vw;
+    position: relative;
+    top: 23vh;
+    left: 10vw;
+    padding-top: 5vh;
+}
+.content p{
+    font-size: 1.5rem;
+    font-family: 'Gorditas', cursive;
+}
+.image{
+    width: 20vw;
+    height: 30vh;
+    position: absolute;
+    right: 0vw;
+    top :2vh;
+    border-radius: 50%;
+}
+@media(min-width:300px)and (max-width:600px){
+    header{
+        height: 130vh;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    @keyframes slide{
+        0%{
+            color: hotpink;
+            border-bottom:2px solid hotpink;
+        }
+        25%{
+           color: indigo;
+           border-bottom:2px solid indigo;
+        }
+       50%{
+            color: mediumslateblue;
+            border-bottom:2px solid mediumslateblue;
+        }
+        75%{
+            color: rgb(128, 0, 60);
+            border-bottom:2px solid rgb(128, 0, 60);
+        }
+        100%{
+            color: hotpink;
+            border-bottom: 2px solid hotpink;
+        }
+    }
+    .image{
+        width: 20vw;
+        height: 12vh;
+        position: absolute;
+        right: 7vw;
+        top:8vh;
+    }
+    .content p{
+        font-size: 0.9rem;
+      
+    }
+      
+}
